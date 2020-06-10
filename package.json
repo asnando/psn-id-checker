@@ -1,0 +1,43 @@
+{
+  "name": "psn-id-checker",
+  "version": "1.0.0",
+  "description": "Easy Playstation Network ID availability checker.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffrm/psn-id-checker.git"
+  },
+  "keywords": [
+    "psn",
+    "id",
+    "checker",
+    "playstation",
+    "netwrok",
+    "availability"
+  ],
+  "author": "Fernando Rama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffrm/psn-id-checker/issues"
+  },
+  "homepage": "https://github.com/ffrm/psn-id-checker#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "nes.css": "^2.3.0",
+    "next": "^9.4.4",
+    "node-fetch": "^2.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}
