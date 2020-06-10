@@ -7,7 +7,14 @@ const PAGE_TITLE = 'PSN ID availability';
 const PAGE_DESCRIPTION = 'Easy Playstation Network ID availability checker.';
 const API_BASE_URL = '/api';
 
+function sendGASearchEvent(query) {
+  if (typeof window.gtag === 'function') {
+    gtag('send', 'event', 'Search', 'search', query);
+  }
+}
+
 async function checkPSNIdAvaiability(id) {
+  sendGASearchEvent(id);
   const response = await fetch(`${API_BASE_URL}?id=${id}`);
   const data = await response.json();
   const { available: isAvailable } = data;
