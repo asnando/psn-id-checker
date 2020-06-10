@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
 import fetch from 'isomorphic-unfetch';
+import PageFooter from '../components/PageFooter';
 
 const PAGE_TITLE = 'PSN ID availability';
 const PAGE_DESCRIPTION = 'Easy Playstation Network ID availability checker.';
@@ -151,6 +152,7 @@ const Home = () => {
         {_renderWarningBox()}
         {_renderAvailableBox()}
         {_renderUnavailableBox()}
+        <PageFooter />
       </main>
       <style jsx>{`
         .fullscreen {
