@@ -83,7 +83,7 @@ const Home = () => {
   function _renderMainBox() {
     return (
       <div className="nes-container with-title is-rounded is-dark is-centered">
-        <p className="title">{PAGE_TITLE}</p>
+        <br />
         <div className="nes-field">
           <label for="id">Enter a PSN id here</label>
           <input type="text" id="id" className="nes-input is-dark" ref={inputRef} />
