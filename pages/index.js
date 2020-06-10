@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import Head from 'next/head';
 import fetch from 'isomorphic-unfetch';
 
+const PAGE_TITLE = 'PSN ID availability';
+const PAGE_DESCRIPTION = 'Easy Playstation Network ID availability checker.';
 const API_BASE_URL = '/api';
 
 async function checkPSNIdAvaiability(id) {
@@ -80,7 +82,7 @@ const Home = () => {
   function _renderMainBox() {
     return (
       <div className="nes-container with-title is-rounded is-dark is-centered">
-        <p className="title">PSN id checker</p>
+        <p className="title">{PAGE_TITLE}</p>
         <div className="nes-field">
           <label for="id">Enter a PSN id here</label>
           <input type="text" id="id" className="nes-input is-dark" ref={inputRef} />
@@ -141,8 +143,8 @@ const Home = () => {
     <>
       <main className="fullscreen is-center">
         <Head>
-          <title>PSN id checker</title>
-          <meta name="description" content="Easy Playstation Network ID availability checker." />
+          <title>{PAGE_TITLE}</title>
+          <meta name="description" content={PAGE_DESCRIPTION} />
         </Head>
         {_renderMainBox()}
         <br />
