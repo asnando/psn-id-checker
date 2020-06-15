@@ -5,11 +5,16 @@ import PageFooter from '../components/PageFooter';
 
 const PAGE_TITLE = 'PSN ID availability';
 const PAGE_DESCRIPTION = 'Easy Playstation Network ID availability checker.';
+const GTAG_EVENT_CATEGORY = process.env.GTAG_EVENT_CATEGORY || 'Search';
+const GTAG_EVENT_ACTION = process.env.GTAG_EVENT_ACTION || 'search';
 const API_BASE_URL = '/api';
 
 function sendGASearchEvent(query) {
   if (typeof window.gtag === 'function') {
-    gtag('send', 'event', 'Search', 'search', query);
+    gtag('event', GTAG_EVENT_ACTION, {
+      event_category: GTAG_EVENT_CATEGORY,
+      event_label: query,
+    });
   }
 }
 

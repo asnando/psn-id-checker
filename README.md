@@ -25,6 +25,12 @@ Before running, set `API_URL` environment variable. Then:
 npm run build && npm start
 ```
 
+### Optional variables
+
+- `GTAG_EVENT_CATEGORY` - Google Analytics event category for event tracking.
+- `GTAG_EVENT_ACTION` - Google Analytics event action for event tracking.
+<i>Both variables are used for user id search event.</i>
+
 #
 
 Developed by [ffrm](https://github.com/ffrm).
