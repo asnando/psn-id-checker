@@ -11,6 +11,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ffrm/psn-id-checker.git"
