@@ -10,6 +10,10 @@ Until now there is no easy way to check if an id is available to be taken. Gener
 
 There may be some wrappers for PSN API's but they are designed to be only used by developers.
 
+## Preview
+
+![Captura de Tela 2020-06-10 às 02 30 50](https://user-images.githubusercontent.com/33915907/86867804-d8f28580-c0a9-11ea-817b-63e5bc95ce51.png)
+
 ## Installation and running
 ```bash
 git clone https://github.com/ffrm/psn-id-checker.git
